@@ -31,7 +31,7 @@ This project was developed as part of the **Image Processing course**.  Our goal
 ## 📂 Project Structure
 
 ```
-Team08_TeamName/
+Projece-IM/
 │
 ├── src/                     # Source code (main scripts)
 │   ├── main.py              # or main.cpp
