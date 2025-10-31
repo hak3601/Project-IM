@@ -1,4 +1,4 @@
-# Image Processing Team Project-02 (2025-2)
+# Image Processing Team Project-02
 
 ### Team Name: *[Insert your team name here]*  
 **Course:** Digital Image Processing (Fall 2025)    
@@ -19,7 +19,7 @@ Our goal is to design and implement a practical system that utilizes **OpenCV** 
 
 ## 📅 Project Timelines
 
-|  | Deadline | Phase | Owner | Material |
+|  | Deadline | Phase | In-Charge | Material |
 | --- | --- | --- | --- | --- |
 | 1 | 11/04 | Submission:(1) A survey & plan file(word) (2) PPT | All |  |
 | 2 | 11/06 | In-Classs Proposal Presentation | 태아카 |  |
