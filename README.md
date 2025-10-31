@@ -9,8 +9,7 @@
 
 ## 📘 Project Overview
 
-This project was developed as part of the **Image Processing course**.  
-Our goal is to design and implement a practical system that utilizes **OpenCV** and other image-processing tools to solve a real-world problem or demonstrate a creative application of image analysis techniques.
+This project was developed as part of the **Image Processing course**.  Our goal is to design and implement a practical system that utilizes **OpenCV** and other image-processing tools to solve a real-world problem or demonstrate a creative application of image analysis techniques.
 
 ---
 
@@ -21,10 +20,10 @@ Our goal is to design and implement a practical system that utilizes **OpenCV** 
 
 |  | Deadline | Phase | In-Charge | Material |
 | --- | --- | --- | --- | --- |
-| 1 | 11/04 | Submission:(1) A survey & plan file(word) (2) PPT | All |  |
+| 1 | 11/04 | Submission:<br> &emsp; (1) A survey & plan file(word) <br> &emsp; (2) PPT | All |  |
 | 2 | 11/06 | In-Classs Proposal Presentation | 태아카 |  |
 | 3 | 11/29 | Source Code Submission | - |  |
-| 4 | 12/06 | Submission of (1) Final Report & (2) PPT | - |  |
+| 4 | 12/06 | Submission: <br> &emsp; (1) Final Report <br> &emsp; (2) PPT | - |  |
 | 5 | 12/11 | D-Day: Fianl Presentation | Random |  |
 
 ---
