@@ -19,10 +19,33 @@ Our goal is to design and implement a practical system that utilizes **OpenCV** 
 
 ## 📅 Project Timelines
 
-|  | Date | Tasks | Owner | Material |
+|  | Deadline | Phase | Owner | Material |
 | --- | --- | --- | --- | --- |
-| 1 | 11/04 | Submission:(1) A survey & plan file(word) (2) Presentation Material | All |  |
-| 2 | 11/06 | Proposal Presentation | 태아카 |  |
-| 3 | 11/29 | Submission: Source code | - |  |
-| 4 | 12/06 | Submission: Final Report & Presentation Material | - |  |
+| 1 | 11/04 | Submission:(1) A survey & plan file(word) (2) PPT | All |  |
+| 2 | 11/06 | In-Classs Proposal Presentation | 태아카 |  |
+| 3 | 11/29 | Source Code Submission | - |  |
+| 4 | 12/06 | Submission of (1) Final Report & (2) PPT | - |  |
 | 5 | 12/11 | D-Day: Fianl Presentation | Random |  |
+
+---
+
+## 📂 Project Structure
+
+```
+Team08_TeamName/
+│
+├── src/                     # Source code (main scripts)
+│   ├── main.py              # or main.cpp
+│   ├── modules/             # helper functions
+│   └── utils/               # image loaders, preprocessors
+│
+├── assets/                  # input images, test data
+├── results/                 # output images, graphs
+├── presentation/            # PPT & other materials
+├── report/                  # Final report (doc/pdf)
+└── README.md                # This file
+```
+
+---
+
+## 📚 References
