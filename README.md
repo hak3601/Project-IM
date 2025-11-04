@@ -2,8 +2,7 @@
 
 ### Team Name: *[Insert your team name here]*  
 **Course:** Digital Image Processing (Fall 2025)    
-**Team Members:** *김성민, 류수정, 전지민, 태아카*  
-**Team Leader:** ** 
+**Team Members:** *김성민, 류수정, 전지민, **태아카\****  
 
 ---
 
