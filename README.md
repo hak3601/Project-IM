@@ -13,8 +13,18 @@ This project was developed as part of the **Image Processing course**.  Our goal
 
 ---
 
-### ✳️ Topic
-> *[Briefly describe your selected topic — e.g., “Face Mask Detection using OpenCV and CNNs”]*
+## ✳️ Topic
+ ### Acne Detection & Classification
+> From Pixels to Pores : Smart Skin Analysis through Vision
+>
+> **Motivation:**
+> - Skin problems like acne are common and affect confidence
+> - Detecting acne automatically can assist skincare and cosmetic analysis
+> - Existing tools often rely on deep learning and heavy models — we propose a simpler, interpretable approach
+>
+> Our system enhances color-based acne detection by converting RGB images into YCrCb and HSV spaces. This helps isolate skin redness, while morphological and contour operations help detect circular acne spots. Finally, we can classify acne types using extracted features.
+
+
 
 ## 📅 Project Timelines
 
