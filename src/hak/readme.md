@@ -69,20 +69,12 @@ Both scripts internally use MediaPipe FaceMesh for robust landmark-based region 
 
 ## 4. Usage
 ### A) Process ALL images in images_in/
-Full-face mode:
-    ```
-    python crop_regions_full.py
-    ```
-
-One-sided mode:
-    ```
-    python crop_regions_onesided.py
-    ```
+- Full-face mode:```python crop_regions_full.py```
+- One-sided mode: ```python crop_regions_onesided.py```
 
 ### B) Process a SINGLE image
-Full-face example: ```python crop_regions_full.py images_in/acne_front.jpg```
-    
-One-sided example: ```python crop_regions_onesided.py images_in/acne_left.jpg```
+- Full-face example: ```python crop_regions_full.py images_in/acne_front.jpg```
+- One-sided example: ```python crop_regions_onesided.py images_in/acne_left.jpg```
 
 
 ## 5. Customization
