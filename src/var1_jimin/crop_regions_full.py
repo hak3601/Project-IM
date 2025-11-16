@@ -1,4 +1,4 @@
-# crop_regions_full.py
+# crop_regions_skinmask_landmark_limited.py
 
 import os
 import sys
