@@ -1,0 +1,35 @@
+crop_regions_auto.py
+│
+├── detect_mode_from_filename()      
+│       • Reads filename prefix (s_ / f_)
+│       • Returns "side" or "full"
+│
+├── crop_full()                      
+│       • Forehead (above eyebrows)
+│       • Left cheek (under eye → above lip)
+│       • Right cheek (under eye → above lip)
+│       • Chin (strictly under lips, no lips)
+│
+├── crop_side()                      
+│       • Forehead (same rule as full: above eyebrows)
+│       • Visible cheek (left or right by area)
+│       • Chin (optional; same logic as full if enabled)
+│
+├── process_image()                  
+│       • Load image
+│       • Run MediaPipe FaceMesh
+│       • Convert landmarks → xy
+│       • Choose mode via filename prefix
+│       • Call crop_full() or crop_side()
+│       • Save output patches
+│
+└── main()                           
+        • Parse CLI argument
+        • Collect paths from images_in/
+        • Initialize FaceMesh
+        • Loop over images
+        • dispatch → process_image(path, face_mesh)
+
+// The croped function is classified by input image file name with "detect_mode_from_filename". 
+// So, filename must start with 's' or 'f'.
+// s -> side && f -> full
