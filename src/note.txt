@@ -13,7 +13,6 @@ crop_regions.py
 ├── crop_side()                      
 │       • Forehead (same rule as full: above eyebrows)
 │       • Visible cheek (left or right by area)
-│       • Chin (optional; same logic as full if enabled)
 │
 ├── process_image()                  
 │       • Load image
