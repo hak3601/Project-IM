@@ -227,9 +227,9 @@ def crop_side(img, pts):
     area_right = (rx2 - rx1) * (ry2 - ry1)
 
     if area_left >= area_right:
-        regions["cheek_visible_left"] = left_cheek
+        regions["left_cheek"] = left_cheek
     else:
-        regions["cheek_visible_right"] = right_cheek
+        regions["right_cheek"] = right_cheek
 
     return regions
 
