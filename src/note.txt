@@ -1,4 +1,4 @@
-crop_regions_auto.py
+crop_regions.py
 │
 ├── detect_mode_from_filename()      
 │       • Reads filename prefix (s_ / f_)
@@ -30,6 +30,10 @@ crop_regions_auto.py
         • Loop over images
         • dispatch → process_image(path, face_mesh)
 
-// The croped function is classified by input image file name with "detect_mode_from_filename". 
-// So, filename must start with 's' or 'f'.
-// s -> side && f -> full
+'''
+    === Be careful === 
+    The croped function is classified by input image file name with "detect_mode_from_filename". 
+    So, filename must start with 's' or 'f'.
+    s -> side && f -> full
+    e.g. s_train0*.png
+'''
