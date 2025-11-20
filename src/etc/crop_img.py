@@ -133,23 +133,30 @@ def process_image(path, face_mesh):
 
     right_cheek = img[y1_r:y2_r, x1_r:x2_r]
 
-    # ----------------- Chin (from under lip to chin) -------------
-    cx_min = int(np.min(chin_pts[:, 0]))
-    cx_max = int(np.max(chin_pts[:, 0]))
+    # ----------------- Chin (only skin under the lips, no lips) -----------------
 
-    # vertical: start a bit below lower lip, end at chin bottom
-    chin_top_raw, chin_bottom_raw = lower_lip_y, chin_bottom_y
-    chin_top, chin_bottom = band_y(chin_top_raw, chin_bottom_raw,
-                                   inner_ratio_top=0.1, inner_ratio_bottom=0.0)
+    # 1) vertical bounds
+    # lower_lip_y : average y of lower lip
+    # chin_bottom_y: lowest chin landmark
 
-    dx_c = int((cx_max - cx_min) * PADDING_X)
-    x1_c = max(0, cx_min - dx_c)
-    x2_c = min(w - 1, cx_max + dx_c)
+    gap = chin_bottom_y - lower_lip_y          # distance from lip to chin
+    chin_top = lower_lip_y + int(0.3 * gap)   # start 25% below lip → safely no lip
+    chin_bottom = chin_bottom_y                # end at chin
 
-    y1_c = chin_top
-    y2_c = min(h - 1, chin_bottom + int((chin_bottom - chin_top) * PADDING_Y))
+    chin_top = max(0, chin_top)
+    chin_bottom = min(h - 1, chin_bottom)
 
-    chin = img[y1_c:y2_c, x1_c:x2_c]
+    # 2) horizontal bounds (central chin only, not full jaw)
+    # use mean x of upper+lower lip as center
+    lip_pts = np.vstack([pts[UPPER_LIP], pts[LOWER_LIP]])
+    mouth_center_x = int(np.mean(lip_pts[:, 0]))
+
+    chin_half_width = int(0.18 * w)  # ≈ 36% of face width, tune if needed
+    x1_c = max(0, mouth_center_x - chin_half_width)
+    x2_c = min(w - 1, mouth_center_x + chin_half_width)
+
+    # 3) crop
+    chin = img[chin_top:chin_bottom, x1_c:x2_c]
 
     # ----------------- Save all four regions ---------------------
     base = os.path.splitext(os.path.basename(path))[0]
