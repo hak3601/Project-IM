@@ -50,37 +50,29 @@ def detect_landmarks_and_mode(img_bgr):
 def analyze_face_regions(img_bgr):
     """
     전체 얼굴 이미지 -> (mode에 따라) crop -> 각 영역에 대해 여드름 분석.
-    return:
-        {
-          "forehead": {
-              "count": int,
-              "ratio": float,
-              "overlay": np.ndarray(BGR),
-              "crop": np.ndarray(BGR)
-          },
-          "left_cheek": {...},
-          ...
-        }
+    return: dict
     얼굴 못 찾으면 {} 리턴
     """
     pts, mode = detect_landmarks_and_mode(img_bgr)
     if pts is None:
         return {}
 
-    if mode == "full":
-        regions = crop_full(img_bgr, pts)
-    else:
-        regions = crop_side(img_bgr, pts)
+    regions = crop_full(img_bgr, pts) if mode == "full" else crop_side(img_bgr, pts)
 
     results = {}
     for name, patch in regions.items():
         if patch.size == 0:
             continue
-        overlay, score, _ = detect_acne_pipeline(patch, debug=False)
+
+        # debug=True 로 호출해서 debug_maps 받기
+        overlay, score, debug_maps = detect_acne_pipeline(patch, debug=True)
+
         results[name] = {
             "count": score["num_spots"],
             "ratio": score["area_ratio"],
             "overlay": overlay,
             "crop": patch,
+            "debug": debug_maps,  
         }
+
     return results
