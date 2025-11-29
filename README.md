@@ -1,6 +1,6 @@
 # Image Processing Team Project-02
 
-### Team Name: *[Insert your team name here]*  
+### Team Name: **GLOPIX**  
 **Course:** Digital Image Processing (Fall 2025)    
 **Team Members:** *김성민, 류수정, 전지민, **태아카\****  
 
