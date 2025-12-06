@@ -34,26 +34,10 @@ This project was developed as part of the **Image Processing course**.  Our goal
 | 3 | 11/29 | Source Code Submission | - |  |
 | 4 | 12/06 | Submission: <br> &emsp; (1) Final Report <br> &emsp; (2) PPT | - |  |
 | 5 | 12/11 | D-Day: Fianl Presentation | Random |  |
-
 ---
 
-## 📂 Project Structure
+## !  Acknowledgements
 
-```
-Projece-IM/
-│
-├── src/                     # Source code (main scripts)
-│   ├── main.py              # or main.cpp
-│   ├── modules/             # helper functions
-│   └── utils/               # image loaders, preprocessors
-│
-├── assets/                  # input images, test data
-├── results/                 # output images, graphs
-├── presentation/            # PPT & other materials
-├── report/                  # Final report (doc/pdf)
-└── README.md                # This file
-```
+All materials used in this project are sourced from peer-reviewed academic publications and are reproduced or adapted strictly for non-commercial, scholarly analysis, criticism, and research purposes.
 
 ---
-
-## 📚 References
