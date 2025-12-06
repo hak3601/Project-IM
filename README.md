@@ -1,7 +1,6 @@
 # Image Processing Team Project-02
 
-### Team Name: **GLOPIX**  
-**Course:** Digital Image Processing (Fall 2025)    
+### Team Name: **GLOPIX**    
 **Team Members:** *김성민, 류수정, 전지민, **태아카\****  
 
 ---
@@ -27,13 +26,13 @@ This project was developed as part of the **Image Processing course**.  Our goal
 
 ## 📅 Project Timelines
 
-|  | Deadline | Phase | In-Charge | Material |
-| --- | --- | --- | --- | --- |
-| 1 | 11/04 | Submission:<br> &emsp; (1) A survey & plan file(word) <br> &emsp; (2) PPT | All | [Report](https://github.com/hak3601/Project-IM/blob/main/report/Team08_GLOPIX_Plan/Team08_GLOPIX_report.pdf) |
-| 2 | 11/06 | In-Classs Proposal Presentation | 태아카 | [PPT](https://github.com/hak3601/Project-IM/blob/main/report/Team08_GLOPIX_Plan/Team08_GLOPIX_ppt.pdf) |
-| 3 | 11/29 | Source Code Submission | - |  |
-| 4 | 12/06 | Submission: <br> &emsp; (1) Final Report <br> &emsp; (2) PPT | - |  |
-| 5 | 12/11 | D-Day: Fianl Presentation | Random |  |
+|  | Deadline | Phase | 
+| --- | --- | --- |
+| 1 | 11/04 | Submission:<br> &emsp; (1) A survey & plan file(word) <br> &emsp; (2) PPT |
+| 2 | 11/06 | In-Classs Proposal Presentation | 
+| 3 | 11/29 | Source Code Submission | 
+| 4 | 12/06 | Submission: <br> &emsp; (1) Final Report <br> &emsp; (2) PPT | 
+| 5 | 12/11 | D-Day: Fianl Presentation | 
 ---
 
 ## !  Acknowledgements
@@ -41,3 +40,5 @@ This project was developed as part of the **Image Processing course**.  Our goal
 All materials used in this project are sourced from peer-reviewed academic publications and are reproduced or adapted strictly for non-commercial, scholarly analysis, criticism, and research purposes.
 
 ---
+
+### @ 2025 Fall
